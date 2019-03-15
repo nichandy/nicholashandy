@@ -1,5 +1,5 @@
 # Site
-repository: sproogen/resume-theme
+repository: nichandy/nicholashandy
 # favicon: images/favicon.ico
 
 # Personal info
@@ -24,10 +24,10 @@ linkedin_username: nicholashandy
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Nick and I'm an aspiring computer engineer and cyber security enthusiast. Along with those I also have experience making software and web apps.
+  Hi, my name's Nick and I'm an undergrad computer engineer as well as a cyber security enthusiast. Along with those I also have experience making software and web apps.
 
   I am most skilled in: <mark>Java Programming</mark>, <mark>Computer Architecture</mark> & <mark>Web Application Development</mark>
-  
+
   I am currently learning: <mark>Hardware Design Principles</mark>, <mark>C Programming</mark> & <mark>AWS</mark>
 
 # Projects Section
