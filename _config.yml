@@ -22,7 +22,7 @@ linkedin_username: nicholashandy
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.jpg
+about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Nick and I'm an undergrad computer engineer as well as a cyber security enthusiast. Along with those I also have experience making software and web apps.
 

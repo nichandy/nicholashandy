@@ -5,3 +5,19 @@
     This is a project developed during the Cyber Defenders Summer Program 2017 with @tinoco86 & @brawlin
   description: | # this will include new lines to allow paragraphs
     Pensieve is a chrome extension that connects to the ethereum block chain to secure user information and provides notification of at risk data. We started this project to apply what we had been learning during our summer intership using a AGILE development methodologies to manage our progress. This project was an incredible learning experience and showed us just how much we could learn in the 8 weeks had to work on the project. 
+
+- name: Any Base Converter
+  link: github.com/nichandy
+  github: github.com/nichandy
+  quote: >
+    Informational and utility web application for base conversions of all types.
+  description: | # this will include new lines to allow paragraphs
+    I decided to work on this project to explore non-traditional mathematical numeral systems. In the sciences it is common to come across bases of factor of 2 (2, 8, 16, 32 etc.) but I thought it would be fun to look at base systems in between the common ones.
+
+- name: Project Hermit
+  link: github.com/nichandy
+  github: github.com/nichandy
+  quote: >
+    Hardware project to develop offline spotify player for exercise and travel.
+  description: | # this will include new lines to allow paragraphs
+    
