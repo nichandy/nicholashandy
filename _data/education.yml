@@ -1,9 +1,10 @@
-- name: Harvard University
-  dates: 2010 - 2013
-  qualification: BSc Computer Science
+- name: San Francisco State University
+  dates: 2018 - 2020
+  qualification: BS Computer Engineering
   quote: >
-    Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+    SF State is a major public urban university, situated in one of the world's great cities. Building on a century-long history of commitment to quality teaching and broad access to undergraduate and graduate education, the University offers comprehensive, rigorous, and integrated academic programs that require students to engage in open-minded inquiry and reflection. 
   description: | # this will include new lines to allow paragraphs
-    During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+    During my time at San Francisco State University I have gradually gained an understanding of how computer hardware works. Currently my coursework has involved both theoretical concepts and hands-on work with hardware. In our engineering labs I have developed a better understanding of hardware development works by building an audio amplifier from start to finish. 
 
-    I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+
+  
