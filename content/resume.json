@@ -1,0 +1,71 @@
+{
+  "basicInfo": {
+    "name": "Nicholas Handy",
+    "label": "",
+    "picture": "",
+    "email": "",
+    "website": "",
+    "summary": "",
+    "socials": [
+      {
+        "network": "Blog",
+        "url": ""
+      },
+      {
+        "network": "Twitter",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "GitHub",
+        "username": "nichandy",
+        "url": "https://github.com/nichandy"
+      },
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      }
+    ],
+    "location": {
+      "city": "",
+      "state": "",
+      "countryCode": ""
+    }
+  },
+  "work": [
+    {
+      "company": "",
+      "position": "",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "jobDescription": ""
+    }
+  ],
+  "education": [
+    {
+      "school": "",
+      "major": "",
+      "focus": "",
+      "description": "",
+      "startDate": "",
+      "endDate": ""
+    }
+  ],
+  "awards": [{}],
+  "certificates": [{}],
+  "skills": [
+    {
+      "name": "Area of Expertise",
+      "proficiency": "",
+      "keywords": ["technology/software list"]
+    }
+  ]
+}
