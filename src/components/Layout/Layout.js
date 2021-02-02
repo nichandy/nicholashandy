@@ -1,21 +1,10 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
+import styles from './Layout.module.css';
 
 const Layout = ({ children }) => {
-  return (
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 992,
-        padding: `0 1rem`,
-      }}
-    >
-      <Header />
-      {children}
-      <Footer />
-    </div>
-  );
+  return <div className={styles.layout}>{children}</div>;
 };
 
 export default Layout;

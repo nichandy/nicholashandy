@@ -1,12 +1,12 @@
 import React from 'react';
-import IntroBlockStyles from './IntroBlock.module.css';
+import styles from './IntroBlock.module.css';
 
 // Avatar/Logo
 // Name
 // Area of expertise
 // Social Links
 const IntroBlock = ({ children }) => (
-  <div className={IntroBlockStyles.container}>{children}</div>
+  <div className={styles.container}>{children}</div>
 );
 
 export default IntroBlock;

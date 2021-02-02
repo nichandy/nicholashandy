@@ -1,0 +1,11 @@
+*,
+body {
+  background-color: #353535;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.layout {
+  margin: 0 auto;
+  max-width: 480;
+  padding: 0 1rem;
+}

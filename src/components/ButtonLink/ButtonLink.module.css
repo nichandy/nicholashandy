@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  color: black;
+  text-align: center;
+  border-radius: 2px;
+  transition-property: all;
+  background: beige;
+  border: 0.5px solid black;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  color: #5ebeb1;
+  border-color: #5ebeb1;
+  transform: translate3d(0, -0.1rem, 0);
+  box-shadow: 2px 4px #8888;
+}
+
+.button:active {
+  transition: none;
+  background: burlywood;
+}
