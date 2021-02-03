@@ -70,13 +70,6 @@ const onRouteUpdate = (location, prevLocation) => {
       location,
       prevLocation
     });
-
-    if (process.env.GATSBY_EXPERIMENTAL_QUERY_ON_DEMAND && process.env.GATSBY_QUERY_ON_DEMAND_LOADING_INDICATOR === `true`) {
-      _emitter.default.emit(`onRouteUpdate`, {
-        location,
-        prevLocation
-      });
-    }
   }
 };
 
@@ -145,6 +138,7 @@ const navigate = (to, options = {}) => {
           });
         }
 
+        console.log(`Site has changed on server. Reloading browser`);
         window.location = pathname;
       }
     }
@@ -168,7 +162,7 @@ function shouldUpdateScroll(prevRouterProps, {
     routerProps: {
       location
     },
-    getSavedScrollPosition: args => [0, this._stateStorage.read(args, args.key)]
+    getSavedScrollPosition: args => this._stateStorage.read(args)
   });
 
   if (results.length > 0) {
@@ -253,21 +247,7 @@ class RouteAnnouncer extends _react.default.Component {
     }));
   }
 
-}
-
-const compareLocationProps = (prevLocation, nextLocation) => {
-  var _prevLocation$state, _nextLocation$state;
-
-  if (prevLocation.href !== nextLocation.href) {
-    return true;
-  }
-
-  if ((prevLocation === null || prevLocation === void 0 ? void 0 : (_prevLocation$state = prevLocation.state) === null || _prevLocation$state === void 0 ? void 0 : _prevLocation$state.key) !== (nextLocation === null || nextLocation === void 0 ? void 0 : (_nextLocation$state = nextLocation.state) === null || _nextLocation$state === void 0 ? void 0 : _nextLocation$state.key)) {
-    return true;
-  }
-
-  return false;
-}; // Fire on(Pre)RouteUpdate APIs
+} // Fire on(Pre)RouteUpdate APIs
 
 
 class RouteUpdates extends _react.default.Component {
@@ -281,7 +261,7 @@ class RouteUpdates extends _react.default.Component {
   }
 
   shouldComponentUpdate(prevProps) {
-    if (compareLocationProps(prevProps.location, this.props.location)) {
+    if (this.props.location.href !== prevProps.location.href) {
       onPreRouteUpdate(this.props.location, prevProps.location);
       return true;
     }
@@ -290,7 +270,7 @@ class RouteUpdates extends _react.default.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (compareLocationProps(prevProps.location, this.props.location)) {
+    if (this.props.location.href !== prevProps.location.href) {
       onRouteUpdate(this.props.location, prevProps.location);
     }
   }
