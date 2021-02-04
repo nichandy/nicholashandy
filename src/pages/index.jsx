@@ -1,10 +1,12 @@
-import React from "react"
-import { css } from "@emotion/react"
-import { Link, graphql } from "gatsby"
-import { rhythm } from "../utils/typography"
-import Layout from "../components/layout"
+import React from 'react';
+import { css } from '@emotion/react';
+import { Link, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import { rhythm } from '../utils/typography';
+import Layout from '../components/layout';
 
-export default function Home({ data }) {
+const Home = ({ data }) => {
+  console.log(typeof data);
   return (
     <Layout>
       <div>
@@ -31,7 +33,7 @@ export default function Home({ data }) {
                   margin-bottom: ${rhythm(1 / 4)};
                 `}
               >
-                {node.frontmatter.title}{" "}
+                {node.frontmatter.title}{' '}
                 <span
                   css={css`
                     color: #555;
@@ -46,8 +48,12 @@ export default function Home({ data }) {
         ))}
       </div>
     </Layout>
-  )
-}
+  );
+};
+
+Home.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export const query = graphql`
   query {
@@ -68,4 +74,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
+
+export default Home;
