@@ -6,13 +6,40 @@ import SEO from '../components/SEO';
 
 const ProjectPage = ({ data }) => {
   const project = data.markdownRemark;
-  const { title } = project.frontmatter;
+  const { title, date, tech, links } = project.frontmatter;
   return (
     <Layout>
       <SEO title={title} description={project.excerpt} />
       <div>
         <h1>{title}</h1>
+        <h6>{date}</h6>
         <div dangerouslySetInnerHTML={{ __html: project.html }} />
+        <div>
+          {links.length === 0 ? (
+            ''
+          ) : (
+            <div>
+              <h3>Links</h3>
+              <ul>
+                {links.map((url) => {
+                  return <li>{url}</li>;
+                })}
+              </ul>
+            </div>
+          )}
+          {tech.length === 0 ? (
+            ''
+          ) : (
+            <div>
+              <h3>Tech Stack</h3>
+              <ul>
+                {tech.map((tool) => {
+                  return <li>{tool}</li>;
+                })}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </Layout>
   );
@@ -32,6 +59,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
+        links
+        tech
       }
       excerpt
     }

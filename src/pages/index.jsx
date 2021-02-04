@@ -51,7 +51,7 @@ const Home = ({ data }) => {
 };
 
 Home.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object),
+  data: PropTypes.objectOf(PropTypes.object),
 };
 
 Home.defaultProps = {
