@@ -3,10 +3,9 @@ import { css } from '@emotion/react';
 import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { rhythm } from '../utils/typography';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const Home = ({ data }) => {
-  console.log(typeof data);
   return (
     <Layout>
       <div>
@@ -52,7 +51,11 @@ const Home = ({ data }) => {
 };
 
 Home.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.arrayOf(PropTypes.object),
+};
+
+Home.defaultProps = {
+  data: [{}],
 };
 
 export const query = graphql`

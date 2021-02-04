@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { useStaticQuery, Link, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 
 import { rhythm } from '../utils/typography';
 
@@ -48,3 +49,7 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};

@@ -1,7 +1,7 @@
-import Typography from "typography"
-import noriegaTheme from "typography-theme-noriega"
+import Typography from 'typography';
+import noriegaTheme from 'typography-theme-noriega';
 
-const typography = new Typography(noriegaTheme)
+const typography = new Typography(noriegaTheme);
 
-export default typography
-export const rhythm = typography.rhythm
+export default typography;
+export const { rhythm } = typography;
