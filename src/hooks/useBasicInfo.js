@@ -28,4 +28,4 @@ const useBasicInfo = () => {
   return dataJson.basicInfo;
 };
 
-export { useBasicInfo as default };
+export default useBasicInfo;
