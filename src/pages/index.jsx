@@ -4,8 +4,10 @@ import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { rhythm } from '../utils/typography';
 import Layout from '../components/Layout';
+import ProjectList from '../components/ProjectList';
 
 const Home = ({ data }) => {
+  const { edges: projects } = data.allMarkdownRemark;
   return (
     <Layout>
       <div>
@@ -17,34 +19,8 @@ const Home = ({ data }) => {
         >
           Amazing Pandas Eating Things
         </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <Link
-              to={node.fields.slug}
-              css={css`
-                text-decoration: none;
-                color: inherit;
-              `}
-            >
-              <h3
-                css={css`
-                  margin-bottom: ${rhythm(1 / 4)};
-                `}
-              >
-                {node.frontmatter.title}{' '}
-                <span
-                  css={css`
-                    color: #555;
-                  `}
-                >
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
-              <p>{node.frontmatter.description}</p>
-            </Link>
-          </div>
-        ))}
+        <h4>{projects.totalCount} Posts</h4>
+        <ProjectList projects={projects} />
       </div>
     </Layout>
   );
