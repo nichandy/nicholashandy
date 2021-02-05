@@ -41,7 +41,7 @@ const Home = ({ data }) => {
                   — {node.frontmatter.date}
                 </span>
               </h3>
-              <p>{node.excerpt}</p>
+              <p>{node.frontmatter.description}</p>
             </Link>
           </div>
         ))}
@@ -67,6 +67,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            description
             date(formatString: "YYYY")
             tech
             links

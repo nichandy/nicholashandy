@@ -22,7 +22,7 @@ const ProjectPage = ({ data }) => {
               <h3>Links</h3>
               <ul>
                 {links.map((url) => {
-                  return <li>{url}</li>;
+                  return <li key={url}>{url}</li>;
                 })}
               </ul>
             </div>
@@ -34,7 +34,7 @@ const ProjectPage = ({ data }) => {
               <h3>Tech Stack</h3>
               <ul>
                 {tech.map((tool) => {
-                  return <li>{tool}</li>;
+                  return <li key={tool}>{tool}</li>;
                 })}
               </ul>
             </div>
