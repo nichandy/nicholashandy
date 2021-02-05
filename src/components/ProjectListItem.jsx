@@ -30,7 +30,7 @@ const ProjectListItem = ({ pageLink, title, date, description, techStack, projec
       <p>{description}</p>
       <p>{projectLinks}</p>
       {techStack.map((tech) => {
-        return <span>{tech}, </span>;
+        return <span key={tech}>{tech}, </span>;
       })}
     </Link>
   );

@@ -53,5 +53,6 @@ module.exports = {
         // Any eslint-webpack-plugin options below
       },
     },
+    `gatsby-transformer-json`,
   ],
 };
