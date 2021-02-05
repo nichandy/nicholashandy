@@ -1,0 +1,35 @@
+{
+  "basicInfo": {
+    "name": "Nicholas Handy",
+    "field": "Software Engineer",
+    "logo": "/",
+    "website": "https://nicholashandy.com",
+    "introduction": "Hi, I work really hard to break things...and then fix them",
+    "socials": [
+      {
+        "network": "GitHub",
+        "url": "https://github.com/nichandy"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/nicholashandy/"
+      },
+      {
+        "network": "Twitter",
+        "url": "https://twitter.com/Nick_Handy"
+      },
+      {
+        "network": "Medium",
+        "url": "https://medium.com/@nickhandy"
+      },
+      {
+        "network": "Dev.to",
+        "url": "https://dev.to/nichandy"
+      }
+    ],
+    "location": {
+      "state": "California",
+      "country": "USA"
+    }
+  }
+}

@@ -30,7 +30,7 @@ const ProjectList = ({ projects }) => {
 };
 
 ProjectList.propTypes = {
-  projects: PropTypes.objectOf(PropTypes.object),
+  projects: PropTypes.arrayOf(PropTypes.object),
 };
 
 ProjectList.defaultProps = {

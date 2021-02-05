@@ -5668,6 +5668,11 @@ gatsby-plugin-eslint@^3.0.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-3.0.0.tgz#af6a70158f1751f03f804430aa8b1feeac7db97c"
   integrity sha512-nvyLz067k8lmhWIalhgFCzlNIjHIabYPZXpARM0k4AGRJWOPgOxc5P0T+G/TjCvtSg4+jtKotbE5ranMbxIBiw==
 
+gatsby-plugin-fontawesome-css@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-fontawesome-css/-/gatsby-plugin-fontawesome-css-1.0.0.tgz#12b0d9e4eb45f9321556e83accfa93fc6627d608"
+  integrity sha512-jToy7WSlNjCtcFWjS7/W1U8jJggKBv2hZhatYyNXELfxvl3eFvuJGlDYYDDKtMzv57N5hbXwUvJ+iW21+FcDOA==
+
 gatsby-plugin-manifest@^2.11.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.12.0.tgz#107bcffaf236fa3b8d2c0ee830bd617bc903273b"
@@ -5849,6 +5854,14 @@ gatsby-telemetry@^1.10.0:
     lodash "^4.17.20"
     node-fetch "^2.6.1"
     uuid "3.4.0"
+
+gatsby-transformer-json@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-2.11.0.tgz#a97603c76db256b890eb1e20922aa4d436b8357e"
+  integrity sha512-3619clIflEMl4OSo/Y9/6Uz+JrpSKKE9WI6i+ciCC7l7ER0lbsPNUBGxf1lXH1xgs5881+QiL8vNeiiwTYetIw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    bluebird "^3.7.2"
 
 gatsby-transformer-remark@^2.15.0:
   version "2.16.0"

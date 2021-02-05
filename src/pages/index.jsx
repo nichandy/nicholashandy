@@ -1,8 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { rhythm } from '../utils/typography';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import ProjectList from '../components/ProjectList';
 
