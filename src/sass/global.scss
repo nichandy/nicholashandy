@@ -1,1 +1,8 @@
-@import './_variables.css';
+@import './_variables.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: red;
+}
