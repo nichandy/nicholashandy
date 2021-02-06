@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import useBasicInfo from '../hooks/useBasicInfo';
+import useBasicInfo from '../../hooks/useBasicInfo';
 
 const Developer = ({ minimal }) => {
   const { name, field, logo, website, introduction, socials } = useBasicInfo();

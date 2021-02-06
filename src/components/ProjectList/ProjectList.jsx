@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProjectListItem from './ProjectListItem';
+import ProjectListItem from '../ProjectListItem';
 import styles from './ProjectList.module.scss';
 
 const ProjectList = ({ projects }) => {

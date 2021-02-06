@@ -1,5 +1,4 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';

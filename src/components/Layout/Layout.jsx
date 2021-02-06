@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Developer from './Developer';
+import Developer from '../Developer';
 import styles from './Layout.module.scss';
 
 export default function Layout({ children }) {
