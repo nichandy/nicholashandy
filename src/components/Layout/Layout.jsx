@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Developer from '../Developer';
+import Header from '../Header';
 import styles from './Layout.module.scss';
 
 export default function Layout({ children }) {
   return (
     <div className={styles.layout}>
-      <Developer minimal={false} />
+      <Header minimal={false} hide={false} />
       {children}
     </div>
   );

@@ -11,7 +11,7 @@
         "url": "https://github.com/nichandy"
       },
       {
-        "network": "LinkedIn",
+        "network": "Linkedin",
         "url": "https://www.linkedin.com/in/nicholashandy/"
       },
       {
@@ -19,12 +19,8 @@
         "url": "https://twitter.com/Nick_Handy"
       },
       {
-        "network": "Medium",
-        "url": "https://medium.com/@nickhandy"
-      },
-      {
-        "network": "Dev.to",
-        "url": "https://dev.to/nichandy"
+        "network": "Email",
+        "url": "nichandy@gmail.com"
       }
     ],
     "location": {
