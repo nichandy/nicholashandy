@@ -1,31 +1,13 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import { rhythm } from '../utils/typography';
+import styles from './ProjectList.module.scss';
 
 const ProjectListItem = ({ pageLink, title, date, description, techStack, projectLinks }) => {
   return (
-    <Link
-      to={pageLink}
-      css={css`
-        text-decoration: none;
-        color: inherit;
-      `}
-    >
-      <h3
-        css={css`
-          margin-bottom: ${rhythm(1 / 4)};
-        `}
-      >
-        {title}{' '}
-        <span
-          css={css`
-            color: #555;
-          `}
-        >
-          — {date}
-        </span>
+    <Link to={pageLink} className={styles.ProjectListItem}>
+      <h3 className={styles.ProjectListItem_h3}>
+        {title} <span className={styles.ProjectListItem_h3_span}>— {date}</span>
       </h3>
       <p>{description}</p>
       <p>{projectLinks}</p>

@@ -1,20 +1,13 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import PropTypes from 'prop-types';
 import ProjectListItem from './ProjectListItem';
+import styles from './ProjectList.module.scss';
 
 const ProjectList = ({ projects }) => {
   return (
     <div>
       {projects.map(({ node }) => (
-        <div
-          css={css`
-            text-decoration: none;
-            color: inherit;
-            margin-bottom: 10px;
-          `}
-          key={node.id}
-        >
+        <div className={styles.ProjectList} key={node.id}>
           <ProjectListItem
             pageLink={node.fields.slug}
             title={node.frontmatter.title}
