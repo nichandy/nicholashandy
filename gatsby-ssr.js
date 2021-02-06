@@ -1,5 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import wrapPageElementWithLayout from './src/helpers/wrapPageElement';
 
-const wrapPageElement = wrapPageElementWithLayout;
-
-export default wrapPageElement;
+export const wrapPageElement = wrapPageElementWithLayout;
