@@ -5,3 +5,15 @@
 $title-color: $brand-primary;
 
 @import '~bulma/bulma.sass';
+
+/* Links */
+a {
+  color: $brand-primary;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: $brand-primary-light;
+}

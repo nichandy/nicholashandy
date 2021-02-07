@@ -4,16 +4,34 @@ import { nanoid } from 'nanoid';
 import useBasicInfo from '../../hooks/useBasicInfo';
 import Icon from '../Icon';
 
-const SocialLink = ({ network, url }) => (
-  <a className={network} href={url}>
-    <Icon name={network} />
-    <div className="">{network}</div>
-  </a>
+const SocialLink = ({ network, url, style }) => (
+  <span className="icon is-inline-block">
+    <Icon name={network} style={style} />
+  </span>
 );
 
 SocialLink.propTypes = {
   network: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
+  style: PropTypes.shape({
+    color: PropTypes.string,
+    size: PropTypes.string,
+    className: PropTypes.string,
+    style: PropTypes.objectOf(PropTypes.string),
+    attr: PropTypes.string,
+    title: PropTypes.string,
+  }),
+};
+
+SocialLink.defaultProps = {
+  style: {
+    color: undefined,
+    size: '1em',
+    className: undefined,
+    style: undefined,
+    attr: undefined,
+    title: undefined,
+  },
 };
 
 const SocialLinks = ({ minimal, hide }) => {
@@ -21,14 +39,12 @@ const SocialLinks = ({ minimal, hide }) => {
   if (hide) return null;
   return (
     <div className="columns is-centered">
-      {socials.map((profile) => {
-        const [id] = React.useState(nanoid);
-        return (
-          <div className="column is-1" key={id}>
-            <SocialLink network={profile.network} url={profile.url} />
-          </div>
-        );
-      })}
+      <div className="column is-one-quarter">
+        {socials.map((profile) => {
+          const [id] = React.useState(nanoid);
+          return <SocialLink network={profile.network} url={profile.url} key={id} />;
+        })}
+      </div>
     </div>
   );
 };
@@ -39,8 +55,8 @@ SocialLinks.propTypes = {
 };
 
 SocialLinks.defaultProps = {
-  minimal: PropTypes.bool,
-  hide: PropTypes.bool,
+  minimal: false,
+  hide: false,
 };
 
 export default SocialLinks;
