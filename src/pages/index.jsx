@@ -7,12 +7,10 @@ import ProjectList from '../components/ProjectList';
 const Home = ({ data }) => {
   const { edges: projects } = data.allMarkdownRemark;
   return (
-    <Layout>
-      <div>
-        <h4>{projects.totalCount} Posts</h4>
-        <ProjectList projects={projects} />
-      </div>
-    </Layout>
+    <div>
+      <h4>{projects.totalCount} Posts</h4>
+      <ProjectList projects={projects} />
+    </div>
   );
 };
 

@@ -1,4 +1,8 @@
 module.exports = {
+  flags: {
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   siteMetadata: {
     title: 'Nicholas Handy',
     description: 'A simple portfolio website',
@@ -54,5 +58,25 @@ module.exports = {
       },
     },
     `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Inter',
+              variants: ['300', '400', '700'],
+            },
+            {
+              family: 'Open Sans',
+              variants: ['300', '400', '700'],
+            },
+          ],
+        },
+        useMinify: true,
+        usePreload: true,
+        usePreconnect: false,
+      },
+    },
   ],
 };
