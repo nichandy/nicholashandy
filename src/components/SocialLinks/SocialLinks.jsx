@@ -8,7 +8,7 @@ import Icon from '../Icon';
 const SocialLink = ({ network, url }) => (
   <a className={network} href={url}>
     <Icon name={network} />
-    <span className={styles.title}>{network}</span>
+    <div className="">{network}</div>
   </a>
 );
 
@@ -21,10 +21,14 @@ const SocialLinks = ({ minimal, hide }) => {
   const { socials } = useBasicInfo();
   if (hide) return null;
   return (
-    <div className={minimal ? styles.small : styles.networks}>
+    <div className="columns is-centered">
       {socials.map((profile) => {
         const [id] = React.useState(nanoid);
-        return <SocialLink network={profile.network} url={profile.url} key={id} />;
+        return (
+          <div className="column is-1">
+            <SocialLink network={profile.network} url={profile.url} key={id} />
+          </div>
+        );
       })}
     </div>
   );

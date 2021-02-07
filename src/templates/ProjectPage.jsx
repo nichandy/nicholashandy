@@ -7,7 +7,7 @@ const ProjectPage = ({ data }) => {
   const project = data.markdownRemark;
   const { title, date, tech, links } = project.frontmatter;
   return (
-    <div className="ProjectPage">
+    <div className="content">
       <SEO title={title} description={project.excerpt} />
       <div>
         <h1>{title}</h1>

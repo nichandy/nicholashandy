@@ -5,12 +5,18 @@ import Layout from '../components/Layout';
 import ProjectList from '../components/ProjectList';
 
 const Home = ({ data }) => {
-  const { edges: projects } = data.allMarkdownRemark;
+  const contentData = data.allMarkdownRemark;
+  const { edges: projects } = contentData;
   return (
-    <div>
-      <h1 className="title">Nicholas Handy</h1>
-      <h4>{projects.totalCount} Posts</h4>
-      <ProjectList projects={projects} />
+    <div className="index">
+      <section className="section">
+        <div className="container">
+          <div className="">
+            <h4>{contentData.totalCount} Posts</h4>
+            <ProjectList projects={projects} />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
