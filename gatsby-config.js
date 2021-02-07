@@ -1,7 +1,7 @@
 module.exports = {
   flags: {
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PRESERVE_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: false,
+    PRESERVE_WEBPACK_CACHE: false,
   },
   siteMetadata: {
     title: 'Nicholas Handy',

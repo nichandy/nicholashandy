@@ -1,17 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SocialLinks from '../SocialLinks';
+import Intro from '../Intro';
 
 const Header = ({ minimal, hide }) => {
   return (
-    <section className="section is-large">
+    <section className="section is-medium">
       <div className="container">
         <div className="has-text-centered">
-          <h1 className="title">Section</h1>
-          <h2 className="subtitle">
-            A simple container to divide your page into <strong>sections</strong>, like the one you`&#39;`re currently
-            reading.
-          </h2>
+          <Intro minimal={minimal} hide={hide} />
           <SocialLinks minimal={minimal} hide={hide} />
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
-import styles from './SocialLinks.module.scss';
 import useBasicInfo from '../../hooks/useBasicInfo';
 import Icon from '../Icon';
 
@@ -25,8 +24,8 @@ const SocialLinks = ({ minimal, hide }) => {
       {socials.map((profile) => {
         const [id] = React.useState(nanoid);
         return (
-          <div className="column is-1">
-            <SocialLink network={profile.network} url={profile.url} key={id} />
+          <div className="column is-1" key={id}>
+            <SocialLink network={profile.network} url={profile.url} />
           </div>
         );
       })}
