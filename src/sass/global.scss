@@ -1,105 +1,111 @@
+@charset "utf-8";
+// If need, change your variables before importing Bulma
 @import './_variables.scss';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+$title-color: $brand-primary;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+@import '~bulma/bulma.sass';
 
-html {
-  font-size: $font-size-root;
-  background: $body-background-color;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
 
-body {
-  font-family: $font-family-base;
-  font-weight: $font-weight-base;
-  font-size: $font-size-base;
-  line-height: $line-height;
-  color: $text-color;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: 'liga', 'kern';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
-  background: $body-background-color;
-  transition: background 0.2s $easing;
-}
+// html,
+// body {
+//   margin: 0;
+//   padding: 0;
+// }
 
-p,
-ul,
-ol {
-  margin: 0 0 $spacer;
-}
+// html {
+//   font-size: $font-size-root;
+//   background: $body-background-color;
+// }
 
-/* Headings */
+// body {
+//   font-family: $font-family-base;
+//   font-weight: $font-weight-base;
+//   font-size: $font-size-base;
+//   line-height: $line-height;
+//   color: $text-color;
+//   text-rendering: optimizeLegibility;
+//   font-feature-settings: 'liga', 'kern';
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   min-height: 100vh;
+//   background: $body-background-color;
+//   transition: background 0.2s $easing;
+// }
 
-h1 {
-  font-size: $font-size-h1;
-}
+// p,
+// ul,
+// ol {
+//   margin: 0 0 $spacer;
+// }
 
-h2 {
-  font-size: $font-size-h2;
-}
+// /* Headings */
 
-h3 {
-  font-size: $font-size-h3;
-}
+// h1 {
+//   font-size: $font-size-h1;
+// }
 
-h4 {
-  font-size: $font-size-h4;
-}
+// h2 {
+//   font-size: $font-size-h2;
+// }
 
-h5 {
-  font-size: $font-size-h5;
-}
+// h3 {
+//   font-size: $font-size-h3;
+// }
 
-h6 {
-  font-size: $font-size-h6;
-}
+// h4 {
+//   font-size: $font-size-h4;
+// }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-family-headings;
-  line-height: $line-height-headings;
-  color: $color-headings;
-  font-weight: $font-weight-headings;
-  margin: 0 0 $spacer;
-}
+// h5 {
+//   font-size: $font-size-h5;
+// }
 
-/* Links */
-a {
-  color: $brand-primary;
-  text-decoration: none;
-  transition: 0.2s ease-out;
-}
+// h6 {
+//   font-size: $font-size-h6;
+// }
 
-a:hover,
-a:focus {
-  color: $brand-secondary;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: $font-family-headings;
+//   line-height: $line-height-headings;
+//   color: $color-headings;
+//   font-weight: $font-weight-headings;
+//   margin: 0 0 $spacer;
+// }
 
-/* Media */
-img,
-video,
-svg {
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-}
+// /* Links */
+// a {
+//   color: $brand-primary;
+//   text-decoration: none;
+//   transition: 0.2s ease-out;
+// }
 
-#___gatsby {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
+// a:hover,
+// a:focus {
+//   color: $brand-secondary;
+// }
+
+// /* Media */
+// img,
+// video,
+// svg {
+//   max-width: 100%;
+//   height: auto;
+//   margin: 0;
+// }
+
+// #___gatsby {
+//   display: flex;
+//   min-height: 100vh;
+//   flex-direction: column;
+// }

@@ -8,6 +8,7 @@ const Home = ({ data }) => {
   const { edges: projects } = data.allMarkdownRemark;
   return (
     <div>
+      <h1 className="title">Nicholas Handy</h1>
       <h4>{projects.totalCount} Posts</h4>
       <ProjectList projects={projects} />
     </div>
