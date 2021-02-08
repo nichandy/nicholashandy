@@ -17,3 +17,20 @@ a:hover,
 a:focus {
   color: $brand-primary-light;
 }
+
+.is-vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.fi-icon {
+  stroke: currentColor;
+  stroke-width: 0.1rem;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  vertical-align: baseline;
+}
