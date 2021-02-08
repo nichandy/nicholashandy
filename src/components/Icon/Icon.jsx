@@ -37,7 +37,7 @@ const Icon = memo(({ name, style }) => {
   };
 
   const IconMapped = components[name];
-  // const IconComp = Feather[name]
+
   if (!IconMapped) return null;
 
   return (
@@ -54,23 +54,9 @@ Icon.displayName = 'Icon';
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
   style: PropTypes.shape({
-    color: PropTypes.string,
-    size: PropTypes.string,
-    className: PropTypes.string,
-    style: PropTypes.objectOf(PropTypes.string),
-    attr: PropTypes.string,
-    title: PropTypes.string,
-  }),
+    size: PropTypes.string.isRequired,
+    className: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
-Icon.defaultProps = {
-  style: {
-    color: undefined,
-    size: '1em',
-    className: undefined,
-    style: undefined,
-    attr: undefined,
-    title: undefined,
-  },
-};
 export default Icon;
