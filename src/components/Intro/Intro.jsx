@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import useBasicInfo from '../../hooks/useBasicInfo';
 
-// TODO Make icons clickable
 // TODO Add subtext for each icon that is hidden until hover
 
 const Intro = ({ minimal, hide }) => {

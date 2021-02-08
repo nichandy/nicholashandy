@@ -5,10 +5,11 @@ import useBasicInfo from '../../hooks/useBasicInfo';
 import Icon from '../Icon';
 
 const SocialLink = ({ network, url, style }) => (
-  <a className="social-link" href={url}>
+  <a className="social-link column is-2 is-inline-block" href={url}>
     <span className="icon is-inline-block is-medium mx-5">
       <Icon name={network} style={style} />
     </span>
+    <div className="social-link-text has-text-centered">{network}</div>
   </a>
 );
 
@@ -49,7 +50,7 @@ const SocialLinks = ({ minimal, hide }) => {
   if (hide) return null;
   return (
     <div className="columns is-centered is-vcentered">
-      <div className="column is-two-fifths is-narrow has-text-centered">
+      <div className="column is-half has-text-centered">
         {socials.map((profile) => {
           const [id] = React.useState(nanoid);
           return (
