@@ -5,9 +5,11 @@ import useBasicInfo from '../../hooks/useBasicInfo';
 import Icon from '../Icon';
 
 const SocialLink = ({ network, url, style }) => (
-  <span className="icon is-inline-block is-medium mx-5">
-    <Icon name={network} style={style} />
-  </span>
+  <a className="social-link" href={url}>
+    <span className="icon is-inline-block is-medium mx-5">
+      <Icon name={network} style={style} />
+    </span>
+  </a>
 );
 
 SocialLink.propTypes = {
