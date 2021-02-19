@@ -59,7 +59,8 @@ export const query = graphql`
       frontmatter {
         title
         date
-        links
+        website
+        code
         tech
       }
       excerpt

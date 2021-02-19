@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
 import ProjectList from '../components/ProjectList';
 
 const Home = ({ data }) => {
@@ -41,7 +40,8 @@ export const query = graphql`
             description
             date(formatString: "YYYY")
             tech
-            links
+            website
+            code
           }
           fields {
             slug

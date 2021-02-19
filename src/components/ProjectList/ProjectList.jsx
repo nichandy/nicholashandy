@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { nanoid } from 'nanoid';
 import ProjectListItem from '../ProjectListItem';
-import styles from './ProjectList.module.scss';
 
 const ProjectList = ({ projects }) => {
+  const [id] = React.useState(nanoid);
   return (
-    <div>
+    <div className="container">
       {projects.map(({ node }) => (
-        <div className={styles.ProjectList} key={node.id}>
+        <div className="columns is-centered" key={id}>
           <ProjectListItem
             pageLink={node.fields.slug}
             title={node.frontmatter.title}

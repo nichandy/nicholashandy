@@ -2,7 +2,8 @@
 title: 'Amber Wave Network'
 date: '2020'
 description: 'An esay to use IoT device platform for environmental and scientific data collection'
-links: ['https://www.amberwave.io/', 'https://github.com/amberwave/amberwave.io']
+website: ['AmberWave.io', 'https://www.amberwave.io/']
+code: ['Repo', 'https://github.com/amberwave/amberwave.io']
 tech: ['JavaScript', 'React', 'MongoDB', 'Nodejs', 'Express', 'AWS', 'Docker', 'RabbitMQ', 'C', 'ESP-32 MCU']
 ---
 
